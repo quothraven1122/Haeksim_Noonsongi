@@ -106,8 +106,8 @@ def generate_song_via_api(lyrics: str, prompt: str = "kpop") -> str:
 
 # test 실행 부분
 if __name__ == "__main__":
-    test_lyrics = "[Verse]\nIn the stormy night, I wander alone\nLost in the rain, feeling like I have been thrown\nMemories of you, they flash before my eyes\nHoping for a moment, just to find some bliss"
-    test_prompt = "kpop"
+    test_lyrics = "[Verse 1] 데이터 언덕 위,\n오차(Loss) 찾기,\n최소로,\n가야 할 곳.\n\n[Chorus] 경사 하강,\nStep by Step.\n가장 가파른 길,\n내려가,\n학습률,\n속도 조절,\n정답을 찾아.\n\n[Outro] 머신러닝,\n기본 원리,\n경사 하강법!"
+    test_prompt = "kpop, 1 min"
     
     mp3_url = generate_song_via_api(test_lyrics, test_prompt)
     
